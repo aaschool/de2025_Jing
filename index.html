@@ -1,1 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Calm Tech App - p5.js Version</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+  <script src="sketch.js"></script>
+</head>
+<body>
+  <div id="login-container">
+    <h2>Login</h2>
+    <input type="text" id="username" placeholder="Username" />
+    <input type="password" id="password" placeholder="Password" />
+    <button onclick="login()">Login</button>
+  </div>
+
+  <div id="dashboard-container" style="display:none;">
+    <h2>Welcome, Lina</h2>
+    <button onclick="startBreathing()">Start Breathing Exercise</button>
+    <button onclick="showHistory()">View History</button>
+    <button onclick="openSettings()">Settings</button>
+    <div id="p5-canvas-container"></div>
+  </div>
+</body>
+</html>
 
